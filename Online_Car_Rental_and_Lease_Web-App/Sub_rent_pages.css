@@ -1,0 +1,242 @@
+/*_________________________________________________________________________________________________________________________________*/
+body {
+  margin: 0px;
+  font-family: Cinzel;
+}
+
+a {
+  text-decoration: none;
+  color: #581845;
+}
+
+a:hover {
+  color: #214230;
+}
+
+/*_________________________________________________________________________________________________________________________________*/
+
+/*_____________________________________________________________(NAVBAR)____________________________________________________________*/
+.Navbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(250, 234, 177, 1);
+}
+
+#Logo {
+  display: inline-block;
+  position: absolute;
+  width: 4.5%;
+  height: 100%;
+}
+
+#Brand-name {
+  display: inline-block;
+  position: absolute;
+  left: 5%;
+  color: #581845;
+  top: 2px;
+}
+
+.List {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 25px;
+  color: #581845;
+  list-style: none;
+}
+
+.List li a {
+  margin-right: 60px;
+}
+
+#Search-box {
+  display: inline-block;
+  position: absolute;
+  margin-left: 1200px;
+  margin-top: 20px;
+  height: 30px;
+  width: 220px;
+  border-radius: 5px;
+  border-color: white;
+}
+
+#Search-button {
+  display: inline-block;
+  position: absolute;
+  margin-left: 1430px;
+  margin-top: 20px;
+  font-family: Cinzel;
+  height: 35px;
+  border-radius: 5px;
+  background-color: rgba(33, 66, 48, 0.9);
+  color: white;
+  border-color: rgba(33, 66, 48, 0.9);
+}
+/*_______________________________________________________________END_______________________________________________________________*/
+
+/*_________________________________________________________(CENTER_CONTAINER)______________________________________________________*/
+
+.Main-wrapper {
+  position: relative;
+  height: 2000px;
+  width: 100%;
+  background-color: darkslategray;
+  margin-top: 70px;
+}
+
+.Banner {
+  position: relative;
+  display: flex;
+  height: 500px;
+  width: 100%;
+  background-color: white;
+}
+
+#Banner-image {
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.Banner-text-container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+}
+
+.Banner-text-heading {
+  color: white;
+  margin-top: 100px;
+  font-size: 90px;
+}
+
+.Banner-text-description {
+  color: white;
+  font-size: 18px;
+}
+
+.Box-wrapper-1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 700px;
+  width: 100%;
+  background-color: white;
+}
+
+.Box-wrapper-2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 800px;
+  width: 100%;
+  background-color: white;
+}
+
+.Box {
+  position: relative;
+  height: 530px;
+  width: 400px;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 100px;
+  border: 1px solid #cccccc;
+}
+
+.Box:hover {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.Box-images {
+  border-radius: 10px;
+  height: 40%;
+  width: 90%;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 1px solid #cccccc;
+}
+
+.Vehicle-name {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+
+.Vehicle-details {
+  display: block;
+  position: relative;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.Book-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.Book-button {
+  background-color: #214230;
+  color: #ffffff;
+  height: 50px;
+  width: 90%;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  display: block;
+  font-family: Cinzel;
+  position: absolute;
+  margin-top: 0px;
+}
+
+.Book-button:hover {
+  background-color: white;
+  border: 1px solid #214230;
+  color: black;
+}
+
+/*________________________________________________________________END______________________________________________________________*/
+
+/*______________________________________________________________(FOOTER)___________________________________________________________*/
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 70px;
+  width: 100%;
+  background-color: #214230;
+}
+
+.Footer-list {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  color: #581845;
+  list-style: none;
+}
+
+.Footer-list li a {
+  margin-right: 60px;
+  color: rgba(250, 234, 177, 1);
+}
+
+.Footer-list li a:hover {
+  color: white;
+}
+/*________________________________________________________________END_________________________________________________________________*/

@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Cinzel;
+}
+
+label {
+  display: block;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-left: 47px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  width: 500px;
+  height: 35px;
+  margin-left: 47px;
+}
+
+#Sign-up-button {
+  display: block;
+  height: 30px;
+  width: 100px;
+  margin-left: 250px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-family: Cinzel;
+  background-color: rgba(33, 66, 48, 0.95);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#Sign-up-button:hover {
+  background-color: white;
+  border: 1px solid #214230;
+  color: black;
+}
+
+#Google-button {
+  display: block;
+  height: 40px;
+  width: 300px;
+  margin-left: 150px;
+  margin-top: 0px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-family: Cinzel;
+  background-color: white;
+  background-image: url("google.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#Google-button:hover {
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+  background-color: white;
+}
+
+.Form-body {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  height: 500px;
+  background-color: #41644a;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.Form-body-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 500px;
+  background-color: #214230;
+}
+
+#Logo {
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.Form-body-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 500px;
+  background-color: white;
+}
+
+.Form-body-right-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+.Form-body-right-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 330px;
+  background-color: white;
+}
+
+.Form-body-right-3 {
+  margin-top: 40px;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}

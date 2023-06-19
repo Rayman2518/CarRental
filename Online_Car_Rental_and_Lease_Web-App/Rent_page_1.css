@@ -1,0 +1,603 @@
+/*_________________________________________________________________________________________________________________________________*/
+body {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  font-family: Cinzel;
+  color: #581845;
+}
+
+a:hover {
+  color: #214230;
+}
+/*_________________________________________________________________________________________________________________________________*/
+
+/*_____________________________________________________________(NAVBAR)____________________________________________________________*/
+.Navbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(250, 234, 177, 1);
+}
+
+#Logo {
+  display: inline-block;
+  position: absolute;
+  width: 4.5%;
+  height: 100%;
+}
+
+#Brand-name {
+  display: inline-block;
+  position: absolute;
+  left: 5%;
+  font-family: Cinzel;
+  color: #581845;
+  top: 2px;
+}
+
+.List {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 25px;
+  font-family: Cinzel;
+  color: #581845;
+  list-style: none;
+}
+
+.List li a {
+  margin-right: 60px;
+}
+
+#Search-box {
+  display: inline-block;
+  position: absolute;
+  margin-left: 1200px;
+  margin-top: 20px;
+  height: 30px;
+  width: 220px;
+  border-radius: 5px;
+  border-color: white;
+}
+
+#Search-button {
+  display: inline-block;
+  position: absolute;
+  margin-left: 1430px;
+  margin-top: 20px;
+  font-family: Cinzel;
+  height: 35px;
+  border-radius: 5px;
+  background-color: rgba(33, 66, 48, 0.9);
+  color: white;
+  border-color: rgba(33, 66, 48, 0.9);
+}
+/*_______________________________________________________________END_______________________________________________________________*/
+
+/*_________________________________________________________(CENTER_CONTAINER)______________________________________________________*/
+.Center-container {
+  position: relative;
+  height: 3000px;
+  width: 100%;
+  background-color: #f2f3f3;
+}
+
+.Sub-container-1 {
+  position: absolute;
+  top: 70px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 900px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.Image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.Text-div {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 900px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.H-1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: Cinzel;
+  font-size: 60px;
+  margin-top: 200px;
+}
+
+.H-2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: Cinzel;
+  font-size: 40px;
+}
+
+.H-3 {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: Cinzel;
+  font-size: 20px;
+}
+
+.Sub-container-2 {
+  position: absolute;
+  top: 1150px;
+  bottom: 200px;
+  left: 100px;
+  right: 100px;
+  height: 1600px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.Heading {
+  position: absolute;
+  left: 510px;
+  color: rgba(33, 66, 48, 0.9);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  display: inline-block;
+  font-family: Cinzel;
+  text-align: center;
+  width: 270px;
+  border-radius: 5px;
+}
+
+.Div-1 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 400px;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.Div-1-images {
+  width: 90%;
+  height: 70%;
+  margin-left: 10px;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+
+.Div-1A {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-1A:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-1B {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-1B:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-1C {
+  position: absolute;
+  top: 100px;
+  left: 700px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-1C:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-1D {
+  position: absolute;
+  top: 100px;
+  left: 1000px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-1D:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-1E {
+  position: absolute;
+  top: 100px;
+  left: 1310px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-1E:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-2 {
+  position: absolute;
+  top: 400px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 400px;
+  background-color: white;
+  overflow: scroll;
+}
+
+.Div-2-images {
+  width: 45%;
+  height: 55%;
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+.Div-2A {
+  position: absolute;
+  top: 100px;
+  left: 1000px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-2A:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-2B {
+  position: absolute;
+  top: 100px;
+  left: 1310px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-2B:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-2C {
+  position: absolute;
+  top: 100px;
+  left: 1600px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-2C:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-2D {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-2D:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-2E {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-2E:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-2F {
+  position: absolute;
+  top: 100px;
+  bottom: 50px;
+  left: 700px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-2F:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-3 {
+  position: absolute;
+  top: 1200px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 400px;
+  background-color: white;
+}
+
+.Div-3-images {
+  width: 80%;
+  height: 70%;
+  margin-left: 20px;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+
+.Div-3A {
+  position: absolute;
+  top: 100px;
+  bottom: 50px;
+  margin-left: 100px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-3A:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-3B {
+  position: absolute;
+  top: 100px;
+  bottom: 50px;
+  margin-left: 550px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-3B:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-3C {
+  position: absolute;
+  top: 100px;
+  bottom: 50px;
+  margin-left: 1010px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-3C:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-4 {
+  position: absolute;
+  top: 800px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 400px;
+  background-color: white;
+  overflow: scroll;
+}
+
+.Div-4-images {
+  width: 90%;
+  height: 70%;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #214230;
+  color: #ffffff;
+  height: 30px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  font-family: Cinzel;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 65px;
+}
+
+button:hover {
+  background-color: white;
+  border: 1px solid #214230;
+  color: black;
+}
+
+.Div-4A {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-4A:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-4B {
+  position: absolute;
+  top: 100px;
+  left: 1600px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-4B:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-4C {
+  position: absolute;
+  top: 100px;
+  left: 700px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-4C:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-4D {
+  position: absolute;
+  top: 100px;
+  left: 1000px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-4D:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-4E {
+  position: absolute;
+  top: 100px;
+  left: 1310px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-4E:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.Div-4F {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.Div-4F:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/*________________________________________________________________END______________________________________________________________*/
+
+/*______________________________________________________________(FOOTER)___________________________________________________________*/
+.Footer {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color: #214230;
+}
+
+.Footer-list {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 470px;
+  margin-top: 40px;
+  font-family: Cinzel;
+  color: #581845;
+  list-style: none;
+}
+
+.Footer-list li a {
+  margin-right: 60px;
+  color: rgba(250, 234, 177, 1);
+}
+
+.Footer-list li a:hover {
+  color: white;
+}
+/*________________________________________________________________END_________________________________________________________________*/

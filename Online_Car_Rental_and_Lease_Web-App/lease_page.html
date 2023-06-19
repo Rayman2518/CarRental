@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LEASE</title>
+    <link rel="stylesheet" type="text/css" href="lease_page.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+  </head>
+  <body>
+    <!--------------------------------------------------------------NAVBAR------------------------------------------------------------->
+    <div class="Navbar">
+      <div id="Navbar-left">
+        <a href="main_page.html">
+          <img id="Logo" src="Logo.png" alt="Logo" />
+        </a>
+        <h2 id="Brand-name">DRIVE SURGE</h2>
+      </div>
+      <div id="Navbar-right">
+        <ul id="List">
+          <li>
+            <a href="main_page.html">HOME</a>
+            <a href="loginform.html">LOGIN</a>
+            <a href="signup_page.html">SIGNUP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!---------------------------------------------------------------END--------------------------------------------------------------->
+    <!----------------------------------------------------------CENTER_CONTAINER------------------------------------------------------->
+    <div class="Wrapper-1">
+      <div class="Profile-card">
+        <div class="Profile-card-div-A">
+          <div class="Box-1"><h2>Step 1</h2></div>
+          <div class="Heading-1"><h3>Create profile</h3></div>
+        </div>
+        <div class="Profile-card-div-B">
+          <div id="Profile-pic"></div>
+          <button id="Profile-pic-button">picture</button>
+        </div>
+        <div class="Profile-card-div-C">
+          <div class="Form">
+            <label>Your name</label>
+            <input type="text" />
+            <label>Phone number</label>
+            <input type="number" />
+          </div>
+        </div>
+        <div class="Profile-card-div-D">
+          <button id="Submit-button">Submit</button>
+          <a id="Make-link" href="#The-Wrapper-2"
+            ><button id="Next-button">Next</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="The-Wrapper-2" class="Wrapper-2">
+      <div class="Description-card">
+        <div class="Description-card-div-A">
+          <div class="Box-1"><h2>Step 2</h2></div>
+          <div class="Heading-1"><h3>Vehicle description</h3></div>
+        </div>
+
+        <div class="Description-card-div-B">
+          <div class="Content">
+            <div class="Content-sub"></div>
+            <div class="Content-sub"></div>
+            <div class="Content-sub"></div>
+          </div>
+          <div class="Content-buttons">
+            <button class="Row-buttons" onclick="uploadImage(1)">Upload</button>
+            <button class="Row-buttons" onclick="uploadImage(2)">Upload</button>
+            <button class="Row-buttons" onclick="uploadImage(3)">Upload</button>
+          </div>
+        </div>
+
+        <div class="Description-card-div-C">
+          <div class="Form-2">
+            <label>Make</label>
+            <input type="text" />
+            <label>Fuel type</label>
+            <input type="text" />
+            <label>Lease price</label>
+            <input type="number" />
+            <label>Description</label>
+            <textarea id="textarea" rows="5" cols="10"></textarea>
+          </div>
+        </div>
+        <div class="Description-card-div-D">
+          <button id="Submit-button">Submit</button>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------------------------------END--------------------------------------------------------------->
+    <!--------------------------------------------------------------FOOTER------------------------------------------------------------->
+    <div class="Footer">
+      <ul class="Footer-list">
+        <li><a href="">COPYRIGHT</a></li>
+        <li><a href="">PRIVACY POLICY</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </div>
+    <!---------------------------------------------------------------JavaScript code--------------------------------------------------------------->
+    <script>
+      //---------------------------------------------------------------Profile Picture--------------------------------------------------------------//
+
+      // Get the button and input element
+      const profilePicBtn = document.getElementById("Profile-pic-button");
+      const profilePicInput = document.createElement("input");
+
+      // Set input type to file
+      profilePicInput.setAttribute("type", "file");
+
+      // Listen for input change
+      profilePicInput.addEventListener("change", function () {
+        const file = profilePicInput.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function () {
+            // set the profile picture as the uploaded image
+            const profilePicDiv = document.getElementById("Profile-pic");
+            profilePicDiv.style.backgroundImage = `url('${reader.result}')`;
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+
+      // Listen for button click
+      profilePicBtn.addEventListener("click", function () {
+        profilePicInput.click();
+      });
+      //---------------------------------------------------------------Vehicle Picture--------------------------------------------------------------//
+      // Select the three upload buttons
+      const uploadButtons = document.querySelectorAll(".Row-buttons");
+
+      // This function takes an index parameter as input
+      function uploadImage(index) {
+        // The function selects all elements with the class name "Content-sub"
+        const contentSubs = document.querySelectorAll(".Content-sub");
+        // The function selects the element at index (index - 1) from the selected elements
+        const contentSub = contentSubs[index - 1];
+        // The function creates a new input element of type "file"
+        const fileInput = document.createElement("input");
+        fileInput.setAttribute("type", "file");
+
+        // This event listener is triggered when the user selects a file
+        fileInput.addEventListener("change", function () {
+          // The selected file is stored in the file variable
+          const file = fileInput.files[0];
+          // If a file is selected
+          if (file) {
+            // A new FileReader object is created
+            const reader = new FileReader();
+            // This function is called when the FileReader object has finished reading the file
+            reader.onload = function () {
+              // The background image of the selected content sub is set to the URL of the file
+              contentSub.style.backgroundImage = `url('${reader.result}')`;
+            };
+            // The FileReader object reads the selected file as a data URL
+            reader.readAsDataURL(file);
+          }
+        });
+
+        // This function simulates a click on the file input element
+        fileInput.click();
+      }
+    </script>
+  </body>
+</html>

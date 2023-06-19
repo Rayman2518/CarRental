@@ -1,0 +1,427 @@
+/*___________________________________________*/
+body {
+  margin: 0px;
+  font-family: Cinzel;
+}
+
+a {
+  text-decoration: none;
+  color: #581845;
+}
+
+a:hover {
+  color: #214230;
+}
+
+label {
+  display: block;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  width: 500px;
+  height: 30px;
+  margin-left: 30px;
+}
+
+#textarea {
+  margin-left: 30px;
+  width: 500px;
+  height: 30px;
+}
+/*___________________________________________*/
+
+/*____________________(NAVBAR)_____________________*/
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(250, 234, 177, 1);
+  border: 1px solid #cccccc;
+}
+
+#Navbar-left {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+#Navbar-right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+#Logo {
+  width: 70px;
+  height: 100%;
+}
+
+#Brand-name {
+  font-family: Cinzel;
+  font-size: 20px;
+  margin-left: 10px;
+  padding-top: 7px;
+  color: #581845;
+}
+
+#List {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  font-family: Cinzel;
+  color: #581845;
+  list-style: none;
+}
+
+#List li a {
+  margin-right: 60px;
+}
+/*______________________END______________________*/
+
+/*___________________(CENTER_PART)_____________________*/
+
+/* ********************( 1 )******************** */
+
+.Wrapper-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 650px;
+ background-color: #f2f3f3;
+}
+
+.Profile-card {
+  height: 600px;
+  width: 800px;
+  border-radius: 5px;
+  background-color: rgb(14, 57, 63);
+}
+/* *********( A )************ */
+
+.Profile-card-div-A {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  background-color: #214230;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+
+.Box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 5px;
+  height: 90px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.Heading-1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 300px;
+  background-color: #214230;
+  color: white;
+}
+/* *********( B )************ */
+.Profile-card-div-B {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+
+#Profile-pic {
+  width: 140px;
+  height: 140px;
+  margin-left: 330px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #cccccc;
+  background-size: cover;
+  background-position: center;
+}
+
+#Profile-pic-button {
+  display: block;
+  height: 35px;
+  width: 100px;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-family: Cinzel;
+  background-color: #214230;
+  color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#Profile-pic-button:hover {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: black;
+}
+/* *********( C )************ */
+
+.Profile-card-div-C {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background-color: white;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+
+.Form {
+  height: 200px;
+  width: 600px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+/* *********( D )************ */
+
+.Profile-card-div-D {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #214230;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+
+#Submit-button {
+  display: block;
+  height: 35px;
+  width: 100px;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-family: Cinzel;
+  background-color: rgba(250, 234, 177, 1);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#Submit-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#Next-button {
+  display: block;
+  height: 35px;
+  width: 100px;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-family: Cinzel;
+  background-color: rgba(250, 234, 177, 1);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#Next-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ********************( 2 )******************** */
+.Wrapper-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-color: #f2f3f3;
+}
+
+.Description-card {
+  height: 740px;
+  width: 800px;
+  border-radius: 5px;
+  background-color: black;
+}
+/* *********( A )************ */
+
+.Description-card-div-A {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  background-color: #214230;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 100px;
+  width: 100%;
+  border: 1px solid #cccccc;
+}
+
+/* *********( B )************ */
+
+.Description-card-div-B {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+  background-color: rgb(34, 70, 75);
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+
+.Content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 130px;
+  width: 100%;
+  background-color: white;
+}
+
+.Content-sub {
+  height: 120px;
+  width: 200px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #cccccc;
+  background-size: cover;
+  background-position: center;
+}
+
+.Content-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: white;
+}
+
+.Row-buttons {
+  display: block;
+  height: 35px;
+  width: 100px;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-family: Cinzel;
+  background-color: #214230;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Row-buttons:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* *********( C )************ */
+
+.Description-card-div-C {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 370px;
+  width: 100%;
+  background-color: white;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+
+.Form-2 {
+  height: 340px;
+  width: 600px;
+  background-color: white;
+  border-radius: 5px;
+
+  border: 1px solid #cccccc;
+}
+
+/* *********( D )************ */
+
+.Description-card-div-D {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #214230;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+
+/*______________________END______________________*/
+
+/*_____________________(FOOTER)____________________*/
+.Footer {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color: #214230;
+}
+
+.Footer-list {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-left: 470px;
+  margin-top: 40px;
+  font-family: Cinzel;
+  color: #581845;
+  list-style: none;
+}
+
+.Footer-list li a {
+  margin-right: 60px;
+  color: rgba(250, 234, 177, 1);
+}
+
+.Footer-list li a:hover {
+  color: white;
+}
+/*_____________________END______________________*/

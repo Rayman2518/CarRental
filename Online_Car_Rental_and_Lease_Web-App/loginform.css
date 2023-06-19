@@ -1,0 +1,98 @@
+body {
+  margin: 0px;
+  font-family: Cinzel;
+}
+
+label {
+  display: block;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  width: 333px;
+  height: 35px;
+  margin-left: 30px;
+}
+
+h5 {
+  display: inline-block;
+  margin-left: 171px;
+  color: black;
+}
+
+button {
+  display: block;
+  height: 35px;
+  width: 100px;
+  margin-left: 150px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-family: Cinzel;
+  background-color: rgba(33, 66, 48, 0.95);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+  border: 1px solid #214230;
+  color: black;
+}
+
+.Main-container {
+  position: relative;
+  width: 100%;
+  height: 745px;
+}
+
+#login_background-image-1 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin-left: 10px;
+  margin-top: 300px;
+}
+
+#login_background-image-2 {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  margin-left: 1100px;
+}
+
+.Login-body {
+  position: absolute;
+  background-color: white;
+  height: 600px;
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 560px;
+  border: 1px solid #cccccc;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.Login-body-top {
+  display: flex;
+  justify-content: center;
+  background-color: #214230;
+}
+
+#Logo {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+.Login-body-mid {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}

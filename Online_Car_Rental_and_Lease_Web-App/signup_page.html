@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGNUP</title>
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signup_page.css" />
+  </head>
+
+  <body>
+    <div class="Main-container">
+      <div class="Form-body">
+        <div class="Form-body-left">
+          <a href="main_page.html">
+            <img id="Logo" src="logo_2.png" alt="logo" />
+          </a>
+        </div>
+        <div class="Form-body-right">
+          <div class="Form-body-right-1">
+            <h1>Signup</h1>
+          </div>
+          <div class="Form-body-right-2">
+            <form>
+              <label>Username</label>
+              <input type="text" />
+              <div id="username-error-message"></div>
+              <label>Email</label>
+              <input type="email" />
+              <div id="email-error-message"></div>
+              <label>Password</label>
+              <input type="password" />
+              <div id="password-error-message"></div>
+              <div>
+                <button id="Sign-up-button">Sign up</button>
+              </div>
+            </form>
+          </div>
+          <div class="Form-body-right-3">
+            <button id="Google-button">Sign-up with Google</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var signUpButton = document.getElementById("Sign-up-button");
+
+      signUpButton.addEventListener("mouseover", function () {
+        signUpButton.style.backgroundColor = "white";
+      });
+
+      signUpButton.addEventListener("mouseout", function () {
+        signUpButton.style.backgroundColor = "rgba(33, 66, 48, 0.95)";
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var signUpButton = document.getElementById("Sign-up-button");
+        var usernameInput = document.querySelector('input[type="text"]');
+        var passwordInput = document.querySelector('input[type="password"]');
+        var emailInput = document.querySelector('input[type="email"]');
+        var usernameErrorMessage = document.getElementById(
+          "username-error-message"
+        );
+        var passwordErrorMessage = document.getElementById(
+          "password-error-message"
+        );
+        var emailErrorMessage = document.getElementById("email-error-message");
+
+        signUpButton.addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent form submission
+
+          var username = usernameInput.value.trim();
+          var password = passwordInput.value.trim();
+          var email = emailInput.value.trim();
+
+          var usernameRegex = /^[A-Z][a-zA-Z0-9]{7}$/; // Regular expression for username validation
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for email validation
+
+          var usernameError = false;
+          var passwordError = false;
+          var emailError = false;
+
+          if (!usernameRegex.test(username)) {
+            usernameErrorMessage.innerHTML =
+              "Please enter a valid username (8 characters with first letter capitalized).";
+            usernameError = true;
+          } else {
+            usernameErrorMessage.innerHTML = "";
+          }
+
+          if (password.length !== 8) {
+            passwordErrorMessage.innerHTML =
+              "Please enter a valid password (8 characters).";
+            passwordError = true;
+          } else {
+            passwordErrorMessage.innerHTML = "";
+          }
+
+          if (!emailRegex.test(email)) {
+            emailErrorMessage.innerHTML = "Please enter a valid email address.";
+            emailError = true;
+          } else {
+            emailErrorMessage.innerHTML = "";
+          }
+
+          if (usernameError || passwordError || emailError) {
+            signUpButton.style.display = "block"; // Show the sign-up button
+          } else {
+            signUpButton.style.display = "none"; // Hide the sign-up button
+            // Perform sign-up process or other actions here
+          }
+
+          // Reset error messages after 2 seconds
+          setTimeout(function () {
+            usernameErrorMessage.innerHTML = "";
+            passwordErrorMessage.innerHTML = "";
+            emailErrorMessage.innerHTML = "";
+          }, 2000);
+        });
+      });
+    </script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAsc6lBx7z0LG02EFbRiETIY7KDd4P0EnE",
+        authDomain: "authentication-3396f.firebaseapp.com",
+        databaseURL:
+          "https://authentication-3396f-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "authentication-3396f",
+        storageBucket: "authentication-3396f.appspot.com",
+        messagingSenderId: "406917850767",
+        appId: "1:406917850767:web:4b4bee76c92186c5eb32fa",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="Signup-process.js"></script>
+  </body>
+</html>

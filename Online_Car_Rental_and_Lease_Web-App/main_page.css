@@ -1,0 +1,347 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  font-family: Cinzel;
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border-color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(255, 160, 127, 0.7);
+  border-color: rgb(255, 160, 127, 0.7);
+}
+
+/*-----------------------------------------------------------------------DIVISION-(1)------------------------------------------------------*/
+#brand-name {
+  color: #581845;
+  font-size: 20px;
+}
+
+.d1-container {
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(250, 234, 177, 1);
+  max-width: 100%;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-left h2 {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-right ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-top: 10px;
+  margin-right: 40px;
+}
+
+.navbar-right ul li {
+  margin-right: 40px;
+}
+
+.navbar-right ul li a {
+  text-decoration: none;
+  color: #581845;
+}
+
+.navbar-right ul li a:hover {
+  color: teal;
+}
+
+/*---------------------------------------------------------------------DIVISION-(2)--------------------------------------------------------*/
+.d2-container {
+  background-image: linear-gradient(
+      250deg,
+      rgb(216, 215, 217, 0.7) 40%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    url(salesman2.jpg);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 1000px;
+  margin-top: 70px;
+  width: 100%;
+}
+
+#Heading-1 {
+  position: absolute;
+  display: inline-block;
+  color: black;
+  font-size: 60px;
+  margin-top: 270px;
+  margin-left: 900px;
+}
+
+#Heading-2 {
+  position: absolute;
+  display: inline-block;
+  color: black;
+  font-size: 30px;
+  margin-top: 340px;
+  margin-left: 1070px;
+}
+
+#Heading-3 {
+  position: absolute;
+  display: inline-block;
+  color: black;
+  font-size: 30px;
+  margin-top: 380px;
+  margin-left: 1075px;
+}
+
+#Heading-4 {
+  position: absolute;
+  display: inline-block;
+  color: black;
+  font-size: 30px;
+  margin-top: 420px;
+  margin-left: 1035px;
+}
+
+#Heading-5 {
+  position: absolute;
+  display: inline-block;
+  color: black;
+  font-size: 15px;
+  margin-top: 470px;
+  margin-left: 840px;
+  text-align: center;
+}
+
+#Button-1 {
+  position: absolute;
+  display: inline-block;
+  margin-left: 1050px;
+  margin-top: 550px;
+  background-color: rgba(250, 234, 177, 1);
+  width: 120px;
+  height: 60px;
+}
+
+#Button-1:hover {
+  background-color: white;
+  border: 1px solid #214230;
+  color: black;
+}
+
+#Button-2 {
+  position: absolute;
+  display: inline-block;
+  margin-left: 1200px;
+  margin-top: 550px;
+  background-color: rgba(33, 66, 48, 1);
+  color: white;
+  width: 120px;
+  height: 60px;
+}
+
+#Button-2:hover {
+  background-color: white;
+  border: 1px solid #214230;
+  color: black;
+}
+
+/*---------------------------------------------------------------------DIVISION-(3)--------------------------------------------------------*/
+.d3-container {
+  background-image: url("vintage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+  position: relative;
+}
+
+.d3-sub-container {
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 600px;
+  height: 50%;
+  position: absolute;
+  top: 200px;
+  left: 900px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 39px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.d3-sub-container:hover {
+  background-color: rgba(128, 128, 128, 0.85);
+  box-shadow: -15px 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+/*---------------------------------------------------------------------DIVISION-(4)--------------------------------------------------------*/
+.d4-container {
+  background-image: url("gwagon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+  position: relative;
+}
+
+.d4-sub-container {
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 600px;
+  height: 50%;
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 39px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.d4-sub-container:hover {
+  background-color: rgba(128, 128, 128, 0.85);
+  color: white;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+}
+/*---------------------------------------------------------------------DIVISION-(5)--------------------------------------------------------*/
+.d5-container {
+  background-image: url("porsche_white.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+  position: relative;
+}
+
+.d5-sub-container {
+  background-color: rgba(130, 0, 0, 0.7);
+  width: 600px;
+  height: 50%;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 39px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.d5-sub-container:hover {
+  background-color: rgba(130, 5, 5, 0.9);
+  color: white;
+  box-shadow: 15px 15px 10px rgba(130, 0, 0, 0.3);
+}
+/*---------------------------------------------------------------------DIVISION-(6)--------------------------------------------------------*/
+.d6-container {
+  background-image: url("van.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+  position: relative;
+}
+
+.d6-sub-container {
+  background-color: rgba(105, 130, 105, 0.75);
+  width: 600px;
+  height: 50%;
+  position: absolute;
+  top: 200px;
+  left: 900px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 39px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.d6-sub-container:hover {
+  background-color: #698269;
+  color: white;
+  box-shadow: -15px 15px 10px rgba(105, 130, 105, 0.4);
+}
+/*---------------------------------------------------------------------DIVISION-(7)--------------------------------------------------------*/
+.d7-container {
+  background-image: url("truck.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+  position: relative;
+}
+
+.d7-sub-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 600px;
+  height: 50%;
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  color: black;
+  font-size: 39px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.d7-sub-container:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+}
+/*______________________________________________________________(FOOTER)___________________________________________________________*/
+.Footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color: #214230;
+}
+
+.Footer-list {
+  display: flex;
+  flex-direction: row;
+  color: #581845;
+  list-style: none;
+}
+
+.Footer-list li a {
+  text-decoration: none;
+  margin-right: 60px;
+  color: rgba(250, 234, 177, 1);
+}
+
+.Footer-list li a:hover {
+  color: white;
+}
+/*________________________________________________________________END_________________________________________________________________*/
